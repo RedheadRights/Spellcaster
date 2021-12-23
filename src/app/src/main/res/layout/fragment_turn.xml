@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/turnLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".fragments.TurnFragment" >
+
+    <LinearLayout
+        android:id="@+id/Player1Layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#5771FF"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Player 1:" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Health: " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Right Hand:" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Left Hand: " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Monsters:" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Effects:" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/displayPlayer1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/displayPlayer1Health"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Health" />
+
+            <HorizontalScrollView
+                android:id="@+id/p1RightHandScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/p1RightHandText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="TextView" />
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/p1LeftHandScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                tools:layout_editor_absoluteY="560dp">
+
+                <TextView
+                    android:id="@+id/p1LeftHandText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="TextView" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/displayPlayer1Monsters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Monsters" />
+
+            <TextView
+                android:id="@+id/displayPlayer1Effects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Effects" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Player2Layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#BA4D4D"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Player1Layout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Player 2:" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Health: " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Right Hand:" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Left Hand: " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Monsters:" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Effects:" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/displayPlayer2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/displayPlayer2Health"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Health" />
+
+            <HorizontalScrollView
+                android:id="@+id/p2RightHandScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/p2RightHandText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="TextView" />
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/p2LeftHandScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                tools:layout_editor_absoluteY="560dp">
+
+                <TextView
+                    android:id="@+id/p2LeftHandText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="TextView" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/displayPlayer2Monsters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Monsters" />
+
+            <TextView
+                android:id="@+id/displayPlayer2Effects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Effects" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nextTurnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/fButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="41dp"
+        android:text="F"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftHandButton" />
+
+    <Button
+        android:id="@+id/pButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:text="P"
+        app:layout_constraintStart_toEndOf="@+id/fButton"
+        app:layout_constraintTop_toBottomOf="@+id/leftHandButton" />
+
+    <Button
+        android:id="@+id/sButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:text="S"
+        app:layout_constraintStart_toEndOf="@+id/pButton"
+        app:layout_constraintTop_toBottomOf="@+id/leftHandButton" />
+
+    <Button
+        android:id="@+id/wButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:text="W"
+        app:layout_constraintStart_toEndOf="@+id/sButton"
+        app:layout_constraintTop_toBottomOf="@+id/rightHandButton" />
+
+    <Button
+        android:id="@+id/dButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:text="D"
+        app:layout_constraintStart_toEndOf="@+id/wButton"
+        app:layout_constraintTop_toBottomOf="@+id/rightHandButton" />
+
+    <Button
+        android:id="@+id/cButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="42dp"
+        android:text="C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dButton"
+        app:layout_constraintTop_toBottomOf="@+id/rightHandButton" />
+
+    <Button
+        android:id="@+id/leftHandButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="LH"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Player2Layout" />
+
+    <Button
+        android:id="@+id/rightHandButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="RH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Player2Layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
