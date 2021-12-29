@@ -22,8 +22,6 @@ import com.justinplane.spellcaster.viewmodels.PlayerDataViewModel;
 
 public class MenuFragment extends Fragment {
 
-    AnimationDrawable slimeAnimation;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
