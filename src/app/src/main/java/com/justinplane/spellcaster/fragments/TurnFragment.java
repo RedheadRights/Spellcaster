@@ -178,13 +178,11 @@ public class TurnFragment extends Fragment {
                     getActivity().getSupportFragmentManager().beginTransaction()
                             .replace(R.id.fragmentContainerView, new TurnFragment(1), null)
                             .setReorderingAllowed(true)
-                            .addToBackStack(null)
                             .commit();
                 } else {
                     getActivity().getSupportFragmentManager().beginTransaction()
                             .replace(R.id.fragmentContainerView, GameFragment.class, null)
                             .setReorderingAllowed(true)
-                            .addToBackStack(null)
                             .commit();
                 }
                 viewModel.updatePlayerHands(turnNum, newRHandData.get(), newLHandData.get());

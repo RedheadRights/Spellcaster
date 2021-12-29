@@ -1,5 +1,6 @@
 package com.justinplane.spellcaster.fragments;
 
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.AppCompatEditText;
@@ -10,6 +11,9 @@ import androidx.lifecycle.ViewModelProvider;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.justinplane.spellcaster.R;
 import com.justinplane.spellcaster.models.PlayerData;
@@ -18,6 +22,7 @@ import com.justinplane.spellcaster.viewmodels.PlayerDataViewModel;
 
 public class MenuFragment extends Fragment {
 
+    AnimationDrawable slimeAnimation;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,6 +34,7 @@ public class MenuFragment extends Fragment {
 
         //Button Control
         view.findViewById(R.id.startButton).setOnClickListener(v -> {
+
             AppCompatEditText player1 = view.findViewById(R.id.editPlayer1Name);
             AppCompatEditText player2 = view.findViewById(R.id.editPlayer2Name);
 
@@ -44,6 +50,16 @@ public class MenuFragment extends Fragment {
                         .addToBackStack(null)
                         .commit();
             }
+        });
+
+        ImageView slime = view.findViewById(R.id.slimeView);
+        slime.setBackgroundResource(R.drawable.test_animation);
+
+        AnimationDrawable slimeAnimation = (AnimationDrawable) slime.getBackground();
+
+        slime.setOnClickListener(v -> {
+            slimeAnimation.stop();
+            slimeAnimation.start();
         });
 
         view.findViewById(R.id.resumeButton).setOnClickListener(v -> {
@@ -67,4 +83,5 @@ public class MenuFragment extends Fragment {
 
         return view;
     }
+
 }

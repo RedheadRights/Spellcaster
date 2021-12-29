@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-</selector>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/new_gold_slime" android:duration="1" />
+    <item android:drawable="@drawable/new_santa_gold_slime" android:duration="1000" />
+    <item android:drawable="@drawable/new_gold_slime" android:duration="200" />
+</animation-list>
